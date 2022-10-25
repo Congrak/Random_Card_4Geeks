@@ -1,1 +1,62 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 120px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10vh;
+}
+
+.head,
+.footer {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+
+.head {
+  top: 10px;
+  left: 10px;
+}
+
+.footer {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.spade .head,
+.spade .footer {
+  background-image: url("//cdn.pixabay.com/photo/2013/07/12/12/01/suit-of-spades-145116__340.png");
+}
+
+.club .head,
+.club .footer {
+  background-image: url("//i.pinimg.com/736x/a8/1e/b2/a81eb27cf9083c1a0f0ba96ba9eecca5--yellow-brick-road-the-club.jpg");
+}
+
+.dimond .head,
+.dimond .footer {
+  background-image: url("//upload.wikimedia.org/wikipedia/en/thumb/1/1f/Card_diamond.svg/174px-Card_diamond.svg.png");
+}
+
+.heart .head,
+.heart .footer {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Card_heart.svg/866px-Card_heart.svg.png");
+}
